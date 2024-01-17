@@ -10,8 +10,8 @@ function controllaNumeri(num1, num2) {
   }
 }
 
-var numero1 = 20;
-var numero2 = 40;
+let numero1 = 20;
+let numero2 = 40;
 
 console.log(controllaNumeri(numero1, numero2));
 
@@ -30,10 +30,10 @@ function rimuoviCarattere(stringa, posizione) {
   }
 }
 
-var stringaOriginale = "ciao";
-var posizioneDaRimuovere = 2;
+let stringaOriginale = "ciao";
+let posizioneDaRimuovere = 1;
 
-var stringaModificata = rimuoviCarattere(
+let stringaModificata = rimuoviCarattere(
   stringaOriginale,
   posizioneDaRimuovere
 );
@@ -54,9 +54,9 @@ function controllaNumeri(numero1, numero2) {
   }
 }
 
-var numeroA = 45;
-var numeroB = 80;
-var numeroC = 30;
+let numeroA = 45;
+let numeroB = 80;
+let numeroC = 30;
 
 console.log(controllaNumeri(numeroA, numeroB));
 console.log(controllaNumeri(numeroA, numeroC));
@@ -66,7 +66,7 @@ Crea una funzione che accetti un nome di città come parametro e ritorni il nome
 */
 
 function estendiNomeCitta(nomeCitta) {
-  var nomeCittaMinuscolo = nomeCitta.toLowerCase();
+  let nomeCittaMinuscolo = nomeCitta.toLowerCase();
   if (
     nomeCittaMinuscolo.startsWith("los") ||
     nomeCittaMinuscolo.startsWith("new")
@@ -77,9 +77,9 @@ function estendiNomeCitta(nomeCitta) {
   }
 }
 
-var citta1 = "Los Angeles";
-var citta2 = "New York";
-var citta3 = " Orleans";
+let citta1 = "Los Angeles";
+let citta2 = "New York";
+let citta3 = " Orleans";
 
 console.log(estendiNomeCitta(citta1));
 console.log(estendiNomeCitta(citta2));
@@ -91,24 +91,24 @@ L'array eve essere passato come parametro.
 */
 
 function sommaArray(array) {
-  var somma = 0;
-  for (var i = 0; i < array.length; i++) {
+  let somma = 0;
+  for (let i = 0; i < array.length; i++) {
     somma += array[i];
   }
 
   return somma;
 }
 
-var arrayNumeri = [1, 2, 3, 4, 5];
+let arrayNumeri = [1, 2, 3, 4, 5];
 
 console.log(sommaArray(arrayNumeri));
 
 /* ESERCIZIO 6
-Crea una funzione che controlli che un array onn contenga i numeri 1 o 3. se non li contiene ritorna "True", altrimenti ritorna "False".
+Crea una funzione che controlli che un array  contenga i numeri 1 o 3. se non li contiene ritorna "True", altrimenti ritorna "False".
 */
 
 function arraySenzaUnoTre(arr) {
-  for (var i = 0; i < arr.length; i++) {
+  for (let i = 0; i < arr.length; i++) {
     if (arr[i] === 1 || arr[i] === 3) {
       return false;
     }
@@ -116,7 +116,7 @@ function arraySenzaUnoTre(arr) {
   return true;
 }
 
-var array1 = [2, 4, 6, 8, 1, 5, 9];
+let array1 = [2, 4, 6, 8, 1, 5, 9];
 
 console.log(arraySenzaUnoTre(array1));
 
@@ -142,7 +142,7 @@ function tipoAngolo(gradi) {
   }
 }
 
-var angolo = 123;
+let angolo = 123;
 
 console.log(tipoAngolo(angolo));
 
@@ -151,14 +151,14 @@ Crea una funzione in js che crei un acronimo a partire da una frase. es. "fabbri
 */
 
 function creaAcronimo(frase) {
-  var parole = frase.split(" ");
-  var acronimo = "";
-  for (var i = 0; i < parole.length; i++) {
+  let parole = frase.split(" ");
+  let acronimo = "";
+  for (let i = 0; i < parole.length; i++) {
     acronimo += parole[i].charAt(0).toUpperCase();
   }
   return acronimo;
 }
 
-var frase = "fabbrica italiana automobili torino";
-var risultato = creaAcronimo(frase);
+let frase = "fabbrica italiana automobili torino";
+let risultato = creaAcronimo(frase);
 console.log(risultato);
